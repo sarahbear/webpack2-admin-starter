@@ -1,18 +1,14 @@
 import React from 'react'
-import { IndexLink, Link } from 'react-router'
+import { Menu, Dropdown } from 'antd'
 import './Header.scss'
 
-export const Header = () => (
-  <div>
-    <h1>React Redux Starter Kit</h1>
-    <IndexLink to='/' activeClassName='route--active'>
-      Home
-    </IndexLink>
-    {' · '}
-    <Link to='/counter' activeClassName='route--active'>
-      Counter
-    </Link>
-  </div>
-)
+export default class Header extends React.Component {
+  render () {
 
-export default Header
+    return (
+      <header className='header'>
+        <a href='/' className='logo'>webpack2 admin</a>
+      </header>
+    )
+  }
+}
