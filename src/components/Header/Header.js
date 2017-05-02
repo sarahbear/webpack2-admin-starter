@@ -1,14 +1,12 @@
 import React from 'react'
-import { Menu, Dropdown } from 'antd'
 import './Header.scss'
 
-export default class Header extends React.Component {
-  render () {
+export const Header = () => (
+  <header className='header'>
+    <h1>
+      <a href='/' className='logo'>webpack2 admin</a>
+    </h1>
+  </header>
+)
 
-    return (
-      <header className='header'>
-        <a href='/' className='logo'>webpack2 admin</a>
-      </header>
-    )
-  }
-}
+export default Header
